@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
     void SetActiveCamera()
     {
         firstPersonCamera.gameObject.SetActive(isFirstPerson);  //1인칭 카메라 활성화 여부
-        thirdPersonCamera.gameObject.SetActive(isFirstPerson);  //3인칭 카메라 활성화 여부
+        thirdPersonCamera.gameObject.SetActive(!isFirstPerson);  //3인칭 카메라 활성화 여부
     }
 
     //카메라 및 캐릭터 회전 처리하는 함수
